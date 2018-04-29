@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>2018250065_조수빈</title>
+    <style>
+        * { padding: 0px;
+    margin: 0px;}
+        body{ background-color:#e3f7ec;;}
+
+        a {text-decoration: none;
+            color: black;        }
+
+        header {height:80px;
+                margin:0px;
+                text-align:center;
+                font-size: 29px;
+                }
+      article1 h1 {
+            border-bottom:1px solid black;
+                  }
+
+        nav{margin:0px;
+            font-size:20pt;
+            background:white;}
+
+        nav ul{ text-align:center;
+                border-top:1px solid green;
+                border-bottom:1px solid green;
+                padding: 10px 0; }
+
+        nav ul li { display: inline;
+                    padding:0 40px;
+                    letter-spacing:10px;}
+
+        nav ul li a:hover{ text-decoration:underline;}
+
+        aside#left {width: 115px;
+                    border-right:1px solid gray;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    float: left;}
+
+        #left h4 {font-size: 20px;}
+
+        #left ul {font-size: 15px;
+                  color:#fff;
+                  text-indent: 15px;}
+
+        #left ul li{ background:#67c162;
+                     line-height:60px;
+                     border-bottom: 1px solid black;
+                   }
+
+        #left ul li a{color:#fff;}
+
+
+        #main{  overflow:hidden;
+                float:left;
+                width:1450px;
+              }
+        #notice{  border-bottom:1px solid black;
+                  font-size:40px;
+                  color:black;
+        }
+        @media(max-width:800px){
+
+        }
+        aside#right{left:1579px;
+                    position: fixed;
+                    padding: 0px;
+                     margin-left:10px;
+                     width:200px;
+                     float:left;
+                     border-left:1px solid gray;}
+
+        #login {margin-top: 30px;
+                margin-left: 10px;
+                margin-bottom: 20px;
+                border-bottom: :1px solid gray;
+              }
+        #login#search a:hover{ text-decoration:underline;}
+
+        #search {border-top:1px solid gray;
+                margin-top: 20px;
+                margin-left: 10px;}
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1><a href="https://josoobin.github.io/" >SBWATCH</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+        <li><a href="https://josoobin.github.io/" target="_blank">홈</a></li>
+        <li><a href="index.html" target="_blank">공지사항</a></li>
+        <li><a href="index.html" target="_blank">제작사 소개</a></li>
+        <li><a target="#">배송안내</a></li>
+
+        </ul>
+    </nav>
+
+    <aside id="left">
+        <h4><카테고리></h4>
+        <input id="change" type="button" value="colorchange_brown" onclick="
+          var target = document.querySelector('body');
+          if(this.value === 'colorchange_brown'){
+            this.value = 'colorchange_green';
+
+            var ilist = document.getElementsByTagName('li');
+            var i = 4;
+            while(i < ilist.length){
+    		        ilist[i].style.backgroundColor='#bda277';
+                i = i + 1;
+                                    }
+          }
+          else {
+            this.value = 'colorchange_brown';
+
+            var ilist = document.getElementsByTagName('li');
+            var i = 4;
+            while(i < ilist.length){
+
+    		      ilist[i].style.backgroundColor='#67c162';
+              i = i + 1;
+            }
+          }
+        ">
+        <ul>
+        <li><a href="iframe1" target="_blank">신상품</a></li>
+        <li><a href="iframe1" target="_blank">여성시계</a></li>
+        <li><a href="iframe1" target="_blank">남성시계</a></li>
+        </ul>
+    </aside>
+    <section id="main">
+
+           <div id="notice">조수빈</div>
+          <p><strong></strong> <br/> 한경대학교 컴퓨터공학과 3학년<br/>학번: 2018250065
+    </section>
+    <aside id="right">
+        <div id ="login">
+            <h4><로그인></h4>
+            <form action="#">
+                아이디 <input type="text" /><br />
+                패스워드<input type="password" />
+                <input type="submit" value="로그인" /><br />
+                <a href="#" target="#">(회원가입)</a>
+                <a href="#" target="#">(비밀번호찾기)</a>
+            </form>
+        </div>
+        <br>
+        <div id="search">
+            <h5><전체검색></h5>
+            <input type="search" name="search" style="display:inline-block;" />
+             <input type="submit" value="검색" />
+        </div>
+
+    </aside>
+
+
+
+</body>
+</html>
