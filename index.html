@@ -3,14 +3,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>조수빈 시계쇼핑몰</title>
+    <title>2018250065_조수빈</title>
     <style>
         * { padding: 0px;
     margin: 0px;}
-        body{ background-color: #e3f7ec;}
+        body{ background-color:#e3f7ec;;}
 
         a {text-decoration: none;
-                     color: black;}
+            color: black;        }
 
         header {height:80px;
                 margin:0px;
@@ -18,11 +18,10 @@
                 font-size: 29px;
                 }
         header h1 {
-                  background:#a2f2c6;
+                  background:;
                   }
 
         nav{margin:0px;
-            font-color:#5a3f04;
             font-size:20pt;
             background:white;}
 
@@ -94,30 +93,7 @@
         <!-----헤더----->
         <h1><a href="시계쇼핑몰.html" >SBWATCH</a></h1>
     </header>
-    <input id="night_day" type="button" value="night" onclick="
-      var target = document.querySelector('body');
-      if(this.value === 'night'){
-        target.style.backgroundColor = '#d6cfc6';
-        this.value = 'day111';
 
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = '#954a08';
-          i = i + 1;
-        }
-      } else {
-        target.style.backgroundColor = '#e3f7ec';
-        this.value = 'night';
-
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'black';
-          i = i + 1;
-        }
-      }
-    ">
     <nav>
         <!-------네비게이션------->
         <ul>
@@ -132,6 +108,30 @@
     <aside id="left">
         <!------상품카테고리------>
         <h4><카테고리></h4>
+        <input id="change" type="button" value="colorchange_brown" onclick="
+          var target = document.querySelector('body');
+          if(this.value === 'colorchange_brown'){
+            this.value = 'colorchange_green';
+
+            var ilist = document.getElementsByTagName('li');
+            var i = 4;
+            while(i < ilist.length){
+    		        ilist[i].style.backgroundColor='#bda277';
+                i = i + 1;
+                                    }
+          }
+          else {
+            this.value = 'colorchange_brown';
+
+            var ilist = document.getElementsByTagName('li');
+            var i = 4;
+            while(i < ilist.length){
+
+    		      ilist[i].style.backgroundColor='#67c162';
+              i = i + 1;
+            }
+          }
+        ">
         <ul>
         <li><a href="iframe1" target="_blank">신상품</a></li>
         <li><a href="iframe1" target="_blank">여성시계</a></li>
@@ -151,7 +151,7 @@
     <aside id="right">
         <!--------f로그인, 검색-------->
         <div id ="login">
-            <h4><pre><로그인></pre></h4>
+            <h4><로그인></h4>
             <form action="#">
                 아이디 <input type="text" /><br />
                 패스워드<input type="password" />
@@ -162,10 +162,11 @@
         </div>
         <br>
         <div id="search">
-            <h5><pre><전체검색></pre></h5>
+            <h5><전체검색></h5>
             <input type="search" name="search" style="display:inline-block;" />
              <input type="submit" value="검색" />
         </div>
+
     </aside>
 
 
